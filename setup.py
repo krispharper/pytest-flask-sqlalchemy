@@ -14,11 +14,11 @@ setup(
     long_description=readme(),
     long_description_content_type='text/markdown',
     license='MIT',
-    version='1.0.0',
+    version='1.0.1',
     packages=['pytest_flask_sqlalchemy'],
     install_requires=['pytest>=3.2.1',
                       'pytest-mock>=1.6.2',
-                      'SQLAlchemy>=1.2.2',
+                      'SQLAlchemy>=1.2.2,<1.3',
                       'Flask-SQLAlchemy>=2.3'],
     extras_require={'tests': ['pytest-postgresql']},
     classifiers=[
